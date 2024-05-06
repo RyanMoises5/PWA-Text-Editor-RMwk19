@@ -43,6 +43,9 @@ WHEN I enter content and subsequently click off of the DOM window
 THEN I find that the content in the text editor has been saved with IndexedDB
 WHEN I reopen the text editor after closing it
 THEN I find that the content in the text editor has been retrieved from our IndexedDB
+
+---------------
+
 WHEN I click on the Install button
 THEN I download my web application as an icon on my desktop
 WHEN I load my web application
