@@ -1,4 +1,4 @@
-# 18 Progressive Web Applications (PWA) Challenge: Text Editor Completion
+# 19 Progressive Web Applications (PWA) Challenge: Text Editor Completion
 
 Student: Ryan Moises
 
