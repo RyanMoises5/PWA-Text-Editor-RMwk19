@@ -4,12 +4,11 @@ Student: Ryan Moises
 
 ## Objective
 
-TEXT HERE
+To build a text editor that runs in the browser that functions as a PWA, utilizes both IndexedDB and local storage for data persistence, and has offline capabilities. The app will be deployed on Render.
 
 ## Table of Contents
 * [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
-* [How to Test](#how-to-test)
 * [URLs and Images](#urls-and-images)
 
 ## User Story
@@ -50,24 +49,17 @@ WHEN I deploy to Render
 THEN I should have proper build scripts for a webpack application
 ```
 
-## How to Test
-
-To start the application, ```npm start``` must be initiated in the CLI.
-
 ## URLs and Images 
+
+The following link is the student's deployed app hosted on Render:
+
+(https://pwa-text-editor-rmwk19.onrender.com/)
 
 The following link is the GitHub repository where the associated files are located:
 
-(https://github.com/RyanMoises5/Social-Network-RMwk18)
+(https://github.com/RyanMoises5/PWA-Text-Editor-RMwk19)
 
-![GIF of the User Routes](./assets/UserDemo.gif)
-
-Click [HERE](./assets/UserDemo.webm) for the raw video showcasing how the User routes work
-
-![GIF of the Thought Routes](./assets/ThoughtDemo.gif)
-
-Click [HERE](./assets/ThoughtDemo.webm) for the raw video showcasing how the Thought routes work
-
+![JPG of the working JATE app](./assets/sample.JPG)
 
 ---
 
