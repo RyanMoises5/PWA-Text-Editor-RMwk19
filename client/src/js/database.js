@@ -9,30 +9,28 @@ const initdb = async () =>
         return;
       }
       db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
-      console.log('jate database created');
+      console.log('JATE database created in IndexedDB');
     },
   });
 
 // Adds text content to the database
 export const putDb = async (content) => {
-  console.log('POST to the database');
   const contactDb = await openDB('jate', 1);
   const tx = contactDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
   const request = store.add({ content: content });
   const result = await request;
-  console.log('Data saved to the database', result);
+  console.log('Data saved to the database. Save ID:', result);
 };
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.log('GET from the database');
   const contactDb = await openDB('jate', 1);
   const tx = contactDb.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   const request = store.getAll();
   const result = await request;
-  console.log('result.value', result);
+  console.log('Loading last save from database:', result[result.length - 1]);
   return result;
 }
 

@@ -27,7 +27,6 @@ export default class {
     // If nothing is stored in indexeddb, set the value to header.
     // Data is an array of previous saved content, so code is only taking the content value of the last item of the array
     getDb().then((data) => {
-      console.info('Loaded data from IndexedDB, injecting into editor');
       if (!data || data.length === 0) {
         this.editor.setValue(header)
       } else {
@@ -41,7 +40,6 @@ export default class {
 
     // Save the content of the editor when the editor itself is loses focus
     this.editor.on('blur', () => {
-      console.log('The editor has lost focus');
       putDb(localStorage.getItem('content'));
     });
   }
