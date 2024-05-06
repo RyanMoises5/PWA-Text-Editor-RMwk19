@@ -24,11 +24,11 @@ export default class {
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
 
-    // If nothing is stored in indexeddb, set the value to header.
+// Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
     // Data is an array of previous saved content, so code is only taking the content value of the last item of the array
     getDb().then((data) => {
       if (!data || data.length === 0) {
-        this.editor.setValue(header)
+        this.editor.setValue(localData || header)
       } else {
         this.editor.setValue(data[data.length - 1].content);
       }
